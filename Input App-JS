@@ -1,0 +1,13 @@
+function addText() {
+    const inputText = document.getElementById('inputText');
+    const textList = document.getElementById('textList');
+  
+    const text = inputText.value;
+    if (text.trim() !== '') {
+      const li = document.createElement('li');
+      li.textContent = text;
+      textList.appendChild(li);
+      inputText.value = '';
+    }
+  }
+  
